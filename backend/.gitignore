@@ -1,0 +1,34 @@
+# ──────────────────────────────────────────
+#  BusNow Backend — .gitignore
+# ──────────────────────────────────────────
+
+# Binários compilados
+/busnow-backend
+/bin/
+
+# Configuração com segredos (copie config.example.yaml → config.yaml)
+config.yaml
+
+# Credenciais Firebase (NUNCA versionar)
+serviceAccountKey.json
+*.json.key
+
+# Módulos Go (go.sum é versionado — só go.mod cache local não é)
+# Descomente se quiser ignorar o vendor
+# vendor/
+
+# Coverage e relatórios de teste
+coverage.out
+coverage.html
+*.test
+
+# Variáveis de ambiente locais
+.env
+.env.local
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,10 @@
+# BusNow Backend — Configuração
+# Copie este arquivo como config.yaml e preencha com seus valores.
+# NUNCA versione o config.yaml — ele está no .gitignore.
+
+server:
+  port: "8080"
+
+firebase:
+  service_account_path: "serviceAccountKey.json"  # baixe no Firebase Console > Project Settings > Service accounts
+  database_url: ""  # ex: https://busnow-abc12-default-rtdb.firebaseio.com

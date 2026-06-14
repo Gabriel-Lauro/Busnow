@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #E8001D;
+  --brand-black: #0A0A0A;
+  --brand-dark: #1A1A1A;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+.maplibregl-map {
+  font-family: system-ui, sans-serif !important;
+}
+
+.maplibregl-ctrl-bottom-right {
+  bottom: 340px !important;
+  right: 16px !important;
+}
+
+.maplibregl-ctrl-group {
+  background: #141414 !important;
+  border: 1px solid #2A2A2A !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.maplibregl-ctrl-group button {
+  background: transparent !important;
+  border-bottom: 1px solid #2A2A2A !important;
+}
+
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(1) brightness(0.7) !important;
+}
+
+.maplibregl-ctrl-group button:hover {
+  background: rgba(232, 0, 29, 0.1) !important;
+}
+
+.maplibregl-marker {
+  cursor: default !important;
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pt-safe-top {
+    padding-top: max(env(safe-area-inset-top), 20px);
+  }
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  50% { opacity: 0.5; }
+}

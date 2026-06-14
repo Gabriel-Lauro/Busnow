@@ -1,0 +1,29 @@
+# ──────────────────────────────────────────
+#  BusNow Frontend — .gitignore
+# ──────────────────────────────────────────
+
+# Dependências
+node_modules/
+
+# Build Next.js
+.next/
+out/
+
+# Variáveis de ambiente (copie .env.local.example → .env.local)
+.env.local
+.env.*.local
+.env.production
+
+# Vercel
+.vercel
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

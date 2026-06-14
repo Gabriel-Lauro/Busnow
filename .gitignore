@@ -1,0 +1,14 @@
+# ──────────────────────────────────────────
+#  BusNow — .gitignore raiz
+# ──────────────────────────────────────────
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs genéricos
+*.log
